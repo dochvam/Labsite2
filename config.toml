@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "de Valpine Lab"
-theme = "hugo-lithium"
+theme = "hermit"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -9,17 +9,19 @@ publishDir = "docs"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
-
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Meet the Lab"
+    url = "/people/"
+    weight = 0
+[[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 10
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/perrydv"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
-
+    weight = 100
+    
 [params]
     description = "A website built through Hugo and blogdown."
 
